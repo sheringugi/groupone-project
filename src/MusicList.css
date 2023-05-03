@@ -7,9 +7,11 @@
   .item-container {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     list-style: none;
+    
   }
   
   .item {
