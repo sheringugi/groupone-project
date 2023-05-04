@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from "react";
 
-function NavBar() {
+function NavBar({searchTerm, onSearchTermChange}) {
   return (
     <ul className="navBar">    
       <li className="nav-item active">
@@ -14,7 +14,7 @@ function NavBar() {
         <Link to="/playgame">Play Game</Link>
        </li>
         
-      
+       <input type="text" placeholder="SEARCH ARTIST..." value={searchTerm} onChange={onSearchTermChange} />
     </ul>
   );
 }
