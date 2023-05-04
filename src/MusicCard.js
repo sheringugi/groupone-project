@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import ModalBox from "./ModalBox";
 
-function MusicCard({album}) {
-    
+function MusicCard({ data }) {
+  const [showModal, setShowModal] = useState(false);
+
+  function handleClick() {
+    setShowModal(true);
+  }
+
+  function handleClose() {
+    setShowModal(false);
+  }
+
   return (
-    <div className="Album">
-      <h1>{album.title}</h1>
-      <p>{album.artist}</p>
-      <ul>
-        {album}
-      </ul>
-    </div>
+    <>
+      <div key={data.id} data={data}>
+        <h2>{data.title}</h2>
+        <img src={data.thumbnail} alt={data.title} />
+        <button
+          onClick={handleClick}
+          type="button"
+          className="btn btn-primary"
+          data-toggle="modal"
+          data-target={`#${data.id}`}
+        >
+          View Details
+        </button>
+      </div>
+      {showModal && <ModalBox data={data} onClose={handleClose} />}
+    </>
   );
 }
 
