@@ -13,7 +13,6 @@ const [MMOGames, setMMOGames] = useState([]);
 const [fightingGames, setfightingGames] = useState([]);
 const [strategyGames, setstrategyGames] = useState([]);
 
-
 const handleCategoryChange = async (event) => {
 setSelectedCategory(event.target.value);
 if (event.target.value === "Platform") {
@@ -164,7 +163,6 @@ selectedCategory === "All"
 ? fightingGames
 : selectedCategory === "Strategy"
 ? strategyGames
-
 
 : games.filter((item) => item.category === selectedCategory);
 
