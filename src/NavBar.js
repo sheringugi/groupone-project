@@ -3,7 +3,7 @@ import React from "react";
 
 function NavBar({searchTerm, onSearchTermChange}) {
   return (
-    <div class="topnav">
+    <div className="topnav">
     <ul className="navBar">    
       <li className="nav-item active">
         <Link to="/">Home</Link>
@@ -30,7 +30,7 @@ function NavBar({searchTerm, onSearchTermChange}) {
         <Link to="/strategy">STRATEGY</Link>
        </li>
         
-       <input type="text" placeholder="SEARCH ARTIST..." value={searchTerm} onChange={onSearchTermChange} />
+       <input type="text" placeholder="SEARCH GAME..." value={searchTerm} onChange={onSearchTermChange} />
     </ul>
     </div>
   );

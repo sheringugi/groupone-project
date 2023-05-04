@@ -23,7 +23,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #141313;
+    background-color: #6e5e5e;
   }
   input[type=text] {
     padding: 6px;
@@ -77,8 +77,11 @@ body {
 }
 .card, .modal-dialog {
     
-  background-color:azure!important;
+  background-color:rgb(251, 249, 251)!important;
 
+}
+.card{
+  padding: 15px;
 }
 ol {
   list-style-type: none;
@@ -97,5 +100,19 @@ li a {
   padding: 8px;
 }
 
-
- 
+img{
+  padding: 5px;
+  display: block;
+  
+}
+.music-list{
+  padding: 0%;
+ display: flex;
+}
+.modal-content{
+  display: block;
+}
+.card-img-bottom{
+display: flex;
+max-width: 100%;
+}

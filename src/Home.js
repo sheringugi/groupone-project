@@ -36,6 +36,7 @@ function Home(){
 
  return (
    <div>
+  
     <NavBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
     {/* <SearchBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} /> */}
      <MusicList games={filteredGames} setGames={setGames}/>

@@ -43,6 +43,7 @@ function ModalBox({ data, onClose }) {
               <label>Genre</label>
               <p>{data.genre}</p>
               <div>
+                <label>Free to Game Profile</label>
               <p className="card-text">{data.freetogame_profile_url}</p>
                 </div>  
               
