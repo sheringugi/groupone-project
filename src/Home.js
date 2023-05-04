@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import MusicList from "./MusicList";
-import SearchBar from "./SearchForm";
+// import SearchBar from "./SearchForm";
 import "./MusicList.css"
 import NavBar from "./NavBar";
 
@@ -36,6 +36,7 @@ function Home(){
 
  return (
    <div>
+  
     <NavBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
     {/* <SearchBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} /> */}
      <MusicList games={filteredGames} setGames={setGames}/>

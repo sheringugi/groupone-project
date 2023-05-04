@@ -3,7 +3,7 @@ import React from "react";
 
 function NavBar({searchTerm, onSearchTermChange}) {
   return (
-    <div class="topnav">
+    <div className="topnav">
     <ul className="navBar">    
       <li className="nav-item active">
         <Link to="/">Home</Link>
@@ -12,12 +12,23 @@ function NavBar({searchTerm, onSearchTermChange}) {
         <Link to="/gameprofiles">Game Profiles</Link>
        </li> 
        <li className="nav-item">
-        <Link to="/playgame">Play Game</Link>
-      
+        <Link to="/shooter">SHOOTER</Link>
        </li>
-       <div class="topnav-right">
-       <input type="text" placeholder="SEARCH GAME..." value={searchTerm} onChange={onSearchTermChange} />       
-       </div>
+       <li className="nav-item">
+        <Link to="/mmorpg">MMORPG</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/moba">MOBA</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/mmo">MMO</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/fighting">FIGHTING</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/strategy">STRATEGY</Link>
+       </li>
         
        <input type="text" placeholder="SEARCH GAME..." value={searchTerm} onChange={onSearchTermChange} />
     </ul>

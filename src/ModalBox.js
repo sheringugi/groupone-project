@@ -1,7 +1,10 @@
 import React from "react";
 
 function ModalBox({ data, onClose }) {
-    
+  function handleClick() {
+    window.location.href = data.game_url;
+  }
+  
     return (
     
         <div className="modal-dialog" role="document">
@@ -32,6 +35,7 @@ function ModalBox({ data, onClose }) {
               <label>Genre</label>
               <p>{data.genre}</p>
               <div>
+                <label>Free to Game Profile</label>
               <p className="card-text">{data.freetogame_profile_url}</p>
                 </div>  
               
@@ -45,10 +49,9 @@ function ModalBox({ data, onClose }) {
               <p className="card-text">{data.release_date}</p>
             </div>
             <div className="modal-footer">
-              <label>Play Game</label>
-              <a href={data.game_url} className="card-text">
-                {data.game_url}
-              </a>
+            <button onClick={handleClick}>Play Game</button>
+
+              
               <button
                 type="button"
                 className="btn btn-default"

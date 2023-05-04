@@ -14,8 +14,8 @@ function GameCard({ data }) {
 
   return (
 
-    <div class="card">
-      <div class="container">
+    <div className="card">
+      <div className="container">
         <img onClick={handleClick} src={data.thumbnail} alt={data.title} />
       </div>
       <div id="myModal" class="modal">
