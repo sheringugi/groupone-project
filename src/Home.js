@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import MusicList from "./MusicList";
 import SearchBar from "./SearchForm";
 import "./MusicList.css"
+import NavBar from "./NavBar";
 
 function Home(){
     const [games, setGames] = useState([]);
@@ -35,7 +36,8 @@ function Home(){
 
  return (
    <div>
-    <SearchBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
+    <NavBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
+    {/* <SearchBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} /> */}
      <MusicList games={filteredGames} setGames={setGames}/>
         </div>
  );

@@ -10,7 +10,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/gameprofiles" element={<GameProfiles />} />
-      <Route path="/playgame" element={<PlayGame />} />
+      <Route path="/playgame" element={<PlayGame />} /> 
 
     </Routes>
   );
