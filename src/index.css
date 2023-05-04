@@ -4,7 +4,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #dddddd;
+  background-color: #170d70;
 }
 
 li {
@@ -35,7 +35,7 @@ li a {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #0c0f0e;
   color: white;
 }
 
