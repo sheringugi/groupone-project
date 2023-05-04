@@ -1,17 +1,7 @@
-import { Link } from "react-router-dom";
 import React from "react";
-import GameProfiles from "./GameProfiles";
 
 function ModalBox({ data, onClose }) {
-    const linkWithGameProfiles = () => {
-      return (
-        <div>
-          <Link to={data.freetogame_profile_url} className="card-text">
-            <GameProfiles />
-          </Link>
-        </div>
-      );
-    };
+    
     return (
       <div
         className="modal fade show"
@@ -50,8 +40,7 @@ function ModalBox({ data, onClose }) {
               <label>Genre</label>
               <p>{data.genre}</p>
               <div>
-              <p value={linkWithGameProfiles} className="card-text">
-              </p>
+              <p className="card-text">{data.freetogame_profile_url}</p>
                 </div>  
               
               <label>Platform</label>
