@@ -3,15 +3,7 @@ import React from "react";
 function ModalBox({ data, onClose }) {
     
     return (
-      <div
-        className="modal fade show"
-        id={data.id}
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="modalLabel"
-        aria-hidden="true"
-        
-      >
+    
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
@@ -69,8 +61,6 @@ function ModalBox({ data, onClose }) {
             </div>
           </div>
         </div>
-                  
-                </div>
     )
 
 }

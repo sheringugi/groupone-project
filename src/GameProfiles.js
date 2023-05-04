@@ -5,12 +5,12 @@ import NavBar from "./NavBar";
 function GameProfiles(){
     const [platformGames, setPlatformGames] = useState([]);
     useEffect(() => {
-    const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
+    const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games?platform=browser';
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '3cac3fbcefmsh285e5c6ca28a87ap1dc0d3jsn0513bb7ace9c',
-      'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+        "X-RapidAPI-Key": "3cac3fbcefmsh285e5c6ca28a87ap1dc0d3jsn0513bb7ace9c",
+        "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     }
   };
   

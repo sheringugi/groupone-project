@@ -18,7 +18,10 @@ function GameCard({ data }) {
       <div class="container">
         <img onClick={handleClick} src={data.thumbnail} alt={data.title} />
       </div>
-      {showModal && <ModalBox data={data} onClose={handleClose} />}
+      <div id="myModal" class="modal">
+        {showModal && <ModalBox data={data} onClose={handleClose} />}
+      </div>
+      
     </div>
 
   
