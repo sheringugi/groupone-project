@@ -1,7 +1,10 @@
 import React from "react";
 
 function ModalBox({ data, onClose }) {
-    
+  function handleClick() {
+    window.location.href = data.game_url;
+  }
+  
     return (
       <div
         className="modal fade show"
@@ -53,10 +56,9 @@ function ModalBox({ data, onClose }) {
               <p className="card-text">{data.release_date}</p>
             </div>
             <div className="modal-footer">
-              <label>Play Game</label>
-              <a href={data.game_url} className="card-text">
-                {data.game_url}
-              </a>
+            <button onClick={handleClick}>Play Game</button>
+
+              
               <button
                 type="button"
                 className="btn btn-default"

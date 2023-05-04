@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import React from "react";
-import SearchBar from './SearchForm';
 
 function NavBar({searchTerm, onSearchTermChange}) {
   return (
@@ -13,11 +12,23 @@ function NavBar({searchTerm, onSearchTermChange}) {
         <Link to="/gameprofiles">Game Profiles</Link>
        </li> 
        <li className="nav-item">
-        <Link to="/playgame">Play Game</Link>
+        <Link to="/shooter">SHOOTER</Link>
        </li>
-       <div class="topnav-right">
-       <li className='search'><SearchBar/></li>
-       </div>
+       <li className="nav-item">
+        <Link to="/mmorpg">MMORPG</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/moba">MOBA</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/mmo">MMO</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/fighting">FIGHTING</Link>
+       </li>
+       <li className="nav-item">
+        <Link to="/strategy">STRATEGY</Link>
+       </li>
         
        <input type="text" placeholder="SEARCH ARTIST..." value={searchTerm} onChange={onSearchTermChange} />
     </ul>
