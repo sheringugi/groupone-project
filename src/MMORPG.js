@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GameCard from "./GameCard";
-import "./MusicList.css";
+import "./GameList.css";
 import NavBar from "./NavBar";
 
 function MMORPG() {

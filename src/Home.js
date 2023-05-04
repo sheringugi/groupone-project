@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import MusicList from "./MusicList";
+import MusicList from "./GameList";
 // import SearchBar from "./SearchForm";
-import "./MusicList.css"
+import "./GameList.css"
 import NavBar from "./NavBar";
 
 function Home(){
