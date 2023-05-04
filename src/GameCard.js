@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalBox from "./ModalBox";
 
-function MusicCard({ data }) {
+function GameCard({ data }) {
   const [showModal, setShowModal] = useState(false);
 
   function handleClick() {
@@ -32,4 +32,4 @@ function MusicCard({ data }) {
   );
 }
 
-export default MusicCard;
+export default GameCard;
