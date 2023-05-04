@@ -1,0 +1,16 @@
+// import { Link } from "react-router-dom";
+// import React from "react";
+// import GameProfiles from "./GameProfiles";
+
+// const LinkWithGameProfiles = ({ url }) => {
+//     let url= data.freetogame_profile_url
+//   return (
+//     <div>
+//       <Link to={url} className="card-text">
+//         <GameProfiles />
+//       </Link>
+//     </div>
+//   );
+// };
+
+// export default LinkWithGameProfiles;
