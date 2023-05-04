@@ -1,30 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
+import GameCard from "./GameCard";
+import "./GameList.css";
 
-function GameList() {
-  const [games, setGames] = useState([]);
 
-  useEffect(() => {
-    fetch('https://www.freetogame.com/api-doc')
-      .then(response => {
-        setGames(response.data);
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }, []);
+function GameList({ games }) {
+;
 
-  return (
-    <div>
-      {games.map(game => (
-        <div key={game.id}>
-          <h2>{game.title}</h2>
-          <img src={game.thumbnail} alt={game.title} />
-          <p>{game.short_description}</p>
-          <a href={game.game_url}>Play Now</a>
-        </div>
-      ))}
-    </div>
-  );
+return (
+<div className="Game-list">
+<ol className="item-container">
+{games.map((data) => (
+<GameCard key={data.id} data={data}/>
+))}
+</ol>
+</div>
+);
 }
 
 export default GameList;
