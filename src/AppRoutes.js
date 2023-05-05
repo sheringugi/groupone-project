@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import React from "react";
 import Home from "./Home";
 import GameProfiles from "./GameProfiles";
-// import PlayGame from "./PlayGame"
 import Shooter from "./Shooter"
 import MMORPG from './MMORPG';
 import MOBA from './MOBA';
@@ -15,7 +14,6 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/gameprofiles" element={<GameProfiles />} />
-      {/* <Route path="/playgame" element={<PlayGame />} />  */}
       <Route path="/shooter" element={<Shooter />} />
       <Route path="/MMORPG" element={<MMORPG />} />
       <Route path="/MOBA" element={<MOBA />} />
