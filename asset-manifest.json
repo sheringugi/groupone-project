@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/groupone-project/static/css/main.1a09f00e.css",
+    "main.js": "/groupone-project/static/js/main.9aa32f5b.js",
+    "static/js/787.64deb394.chunk.js": "/groupone-project/static/js/787.64deb394.chunk.js",
+    "index.html": "/groupone-project/index.html",
+    "main.1a09f00e.css.map": "/groupone-project/static/css/main.1a09f00e.css.map",
+    "main.9aa32f5b.js.map": "/groupone-project/static/js/main.9aa32f5b.js.map",
+    "787.64deb394.chunk.js.map": "/groupone-project/static/js/787.64deb394.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a09f00e.css",
+    "static/js/main.9aa32f5b.js"
+  ]
+}
